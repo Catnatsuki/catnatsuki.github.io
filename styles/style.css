@@ -62,6 +62,7 @@ ul.a {
 }
 #subhead {
 	color: #6FB3B8;
+	padding: 0.5em;
 }
 
 a {color:#6FB3B8;}         /* Unvisited link  */
