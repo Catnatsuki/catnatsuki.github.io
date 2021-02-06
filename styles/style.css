@@ -28,7 +28,7 @@ font-size: 50px
 }
 
 .alien {
-    width: 50em;
+    max-width: 50em;
 	margin: auto;
 }
 
