@@ -3,6 +3,7 @@
 <head>
 <title>My Portfolio</title>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
 <meta property="og:type" content="website">
 <meta property="og:title" content="My Portfolio">
 <meta property="og:description" content="A collection of all the things I have made. 🙃">
@@ -14,33 +15,40 @@
 </head>
 <script src="https://kit.fontawesome.com/46c89c64df.js" crossorigin="anonymous"></script>
 <body>
-
 <div class="alien">
 
 <header>
 
 <nav>
-	<ul class="fa-ul a">
-		<li><a href="/"><i class="fas fa-house-user fa-2x" title="Home" aria-label="Home"></i></a></li>
-	</ul>
-</nav><h1 id='headings'>CATNATSUKI</h1>
+	<a href="/"><i class="fas fa-house-user fa-2x" title="Home" aria-label="Home"></i></a>
+</nav>
+<h1 id='headings'>CATNATSUKI</h1>
+<button onclick="toggle_contrast()"><i class="fas fa-toggle-on"></i></button>
+<script src="scripts/theme.js"></script>
+
 </header>
 
 <main width= 50em; margin= auto;>
 
-<h2 id="subhead"; padding: 0.5em;>Bio</h2>
+<h2 id="subhead">Bio</h2>
 
 <p id="body">Hello! I'm catnatsuki. 🙂<br> You can also call me Barista/Coffee/Red, but none of those are my real names.<br> I'm a college student studying computer science, in my free time i like to work on my projects or draw something.<br> You can find my art on my instagram, if you could follow me on instagram it would mean the world to me. 
 </p>
 
-<h2 id="subhead"; padding: 0.5em;>Current Projects</h2>
+<h2 id="subhead">Current Projects</h2>
 
 <ul class="fa-ul" id="body">
 	<li><span class="fa-li"><i class="fas fa-grin-squint"></i></span><a href="Dadjokes/index.html">Dad Jokes</a>, A Website for dads who like jokes. :D</li>
 	<li><span class="fa-li"><i class="fab fa-instagram"></i></span><a href="https://instagram.com/catnatsuki_/">My Instagram</a>, An instagram page filled with my art :D</li>
 </ul>
 
-<h2 id="subhead"; padding: 0.5em;> Contact </h2>
+<h2 id="subhead">Galleries</h2>
+
+<ul class="fa-ul" id="body">
+	<li><span class="fa-li"><i class="fas fa-palette"></i></span><a href="images/art/index.html">Art</a>, A Gallery of my digital art.</li>
+</ul>
+
+<h2 id="subhead"> Contact </h2>
 <p id="body"> If you would like to contact me you can drop an email at <a href="mailto:catnatsuki@omg.lol?Subject=Contacting%20from%20your%20website." target="_top"> catnatsuki@omg.lol</a> or message me on instagram.
 </p>
 
@@ -57,8 +65,11 @@
 	    <li text-align= center;><a href="https://instagram.com/catnatsuki_/"><i class="fab fa-2x fa-instagram-square"></i></a></li>
     </ul>
     </center>
-	</div>
-	
+</div>
+
 </footer>
+<script type="text/javascript">
+	if(window.matchMedia('(prefers-color-scheme: dark)').matches)
+</script>
 </body>
 </html>
