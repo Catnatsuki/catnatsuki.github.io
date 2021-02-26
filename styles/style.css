@@ -13,17 +13,17 @@ html { font-family: 'cereal', bold; }
 body {
 	margin: 0;
 	background: rgb(252,213,255);
-	background: #F6F6F2;
+	background: #5CDB95;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	font-size: 1em;
 }
 #body{
-	color: #86D8DE;
+	color: #379683;
 	padding: 1em;
 }
 #headings {
-color: #388087;
+color: #05386B;
 text-align: center;
 font-size: 50px
 }
@@ -61,11 +61,32 @@ ul.a {
   list-style-position: outside;
 }
 #subhead {
-	color: #6FB3B8;
+	color: #EDF5E1;
 	padding: 0.5em;
 }
 
-a {color:#6FB3B8;}         /* Unvisited link  */
-a:visited {color:#6FB3B8;} /* Visited link    */
-a:hover {color:#6FB3B8;}   /* Mouse over link */
-a:active {color:#6FB3B8;}  /* Selected link   */
+#gallery {
+	color: #86D8DE;
+	padding: 6px;
+}
+
+a {color:#379683;}         /* Unvisited link  */
+a:visited {color:#379683;} /* Visited link    */
+a:hover {color:#8EE4AF;}   /* Mouse over link */
+a:active {color:#379683;}  /* Selected link   */
+
+/* Colour scheme for Lavendar Theme
+Background: #FEFDFE;
+Heading: #FA5770;
+Sub heading: #A489CE;
+Text(body): #FFA5B9;
+Link hover: #F0D9EA;
+*/
+
+/* Colour scheme for forest Theme
+Background: #5CDB95;
+Heading: #05386B;
+Sub Heading: #EDF5E1;
+Text(body): #379683;
+Link Hover: #8EE4AF;
+*/
