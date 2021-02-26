@@ -1,0 +1,92 @@
+@font-face {
+font-family: 'cereal';
+src: url("https://raw.githubusercontent.com/rainbowunicornstudio/healtheweb-typeface/main/HealTheWebA-Regular.otf") format("opentype");}
+html { font-family: 'cereal', bold; }
+@supports (font-variation-settings: bold;) {
+	html { font-family: 'cereal', bold; }
+}
+
+* {
+	font-weight: 600;
+}
+
+body {
+	margin: 0;
+	background: rgb(252,213,255);
+	background: #5CDB95;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-size: 1em;
+}
+#body{
+	color: #379683;
+	padding: 1em;
+}
+#headings {
+color: #05386B;
+text-align: center;
+font-size: 50px
+}
+
+.alien {
+    max-width: 50em;
+	margin: auto;
+}
+
+.center {
+	text-align: center;
+	width: 100%;
+}
+
+#top {
+    font-size: 40px;
+    text-align: center;
+	color: #000000;
+}
+
+#menu ul {
+  text-align: center;
+  list-style: none;
+  display: inline-flex;
+  float: none;
+  color: #6FB3B8;
+}
+
+#menu li {
+margin: 0.5em;
+padding: 0;
+}
+
+ul.a {
+  list-style-position: outside;
+}
+#subhead {
+	color: #EDF5E1;
+	padding: 0.5em;
+}
+
+#gallery {
+	color: #86D8DE;
+	padding: 6px;
+}
+
+a {color:#379683;}         /* Unvisited link  */
+a:visited {color:#379683;} /* Visited link    */
+a:hover {color:#8EE4AF;}   /* Mouse over link */
+a:active {color:#379683;}  /* Selected link   */
+
+/* Colour scheme for Lavendar Theme
+Background: #FEFDFE;
+Heading: #FA5770;
+Sub heading: #A489CE;
+Text(body): #FFA5B9;
+Link hover: #F0D9EA;
+*/
+
+/* Colour scheme for forest Theme
+Background: #5CDB95;
+Heading: #05386B;
+Sub Heading: #EDF5E1;
+Text(body): #379683;
+Link Hover: #8EE4AF;
+*/
