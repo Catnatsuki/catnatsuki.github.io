@@ -70,6 +70,11 @@ ul.a {
 	padding: 6px;
 }
 
+.mint {
+	background: #ffffff;
+	color: #000000;
+}
+
 a {color:#379683;}         /* Unvisited link  */
 a:visited {color:#379683;} /* Visited link    */
 a:hover {color:#8EE4AF;}   /* Mouse over link */
