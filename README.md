@@ -1,2 +1,2 @@
 # catnatsuki.github.io
-trying to set up github pages.
+Git Hub repo for my personal webpage.
