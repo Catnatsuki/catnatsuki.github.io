@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DAD JOKES</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta property="og:type" content="website">
+<meta property="og:title" content="JOKE DISPENSER">
+<meta property="og:description" content="A joke dispenser to make you laugh. ❤️">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap');
+html { font-family: 'Source Code Pro', monospace; }
+@supports (font-variation-settings: bold) {
+	html { font-family: 'Source Code Pro', monospace; }
+}
+
+* {
+	font-weight: 600;
+}
+
+body {
+	margin: 0;
+	background: rgb(252,213,255);
+	background: linear-gradient(108deg, rgba(252,213,255,1) 0%, rgba(222,190,227,1) 35%, rgba(154,252,226,1) 100%);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-size: 1em;
+	text-align: center;
+}
+#text {
+color: #FEE0C6;
+background: #FDB327;
+text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+color: #000000;
+background: #FFFFFF;
+}
+
+#dads-container {
+    
+	color: #197BBD;
+	width: 80%;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-shadow: 3px 3px 0 #F9A03F, 6px 6px 0 #EFF7F6;
+}
+
+#top {
+    font-size: 40px;
+    text-align: center
+	color: #FDB327;
+    text-shadow: 3px 3px 0 #EF402B, 6px 6px 0 #FDB327;
+    color: #FEE0C6;
+}
+
+#bottom {
+    color: #EF402B;
+	position: fixed;
+	bottom: 1em;
+	right: 1em;
+	text-align: right;
+	line-height: 0;
+}
+
+a:link, a:visited, a:hover, a:active {
+	color: #000;
+}
+
+</style>
+</head>
+<body>
+<h1 id="top">Hello, I'm a Dad joke</h1>
+<div id="dads-container">&bull;&bull;&bull;</div>
+<p id="bottom">Made by <a style="color:#EF402B"; href="https://omg.lol/catnatsuki">Catnatsuki</a> on <a style="color:#EF402B"; href="https://omg.lol/">OMG.LOL</a></p>
+<script>
+function dispense_jokes() {
+    fetch('https://raw.githubusercontent.com/Catnatsuki/catnatsuki.omg.lol/main/jokes.json', {cache: "no-cache"}).then(function(response) {
+        response.text().then(function(text) {
+            var joke = JSON.parse(text);
+            var item = joke[Math.floor(Math.random() * joke.length)];
+			var size = 4;
+            var out = '<p style="font-weight: 600; font-size: ' + size + 'vmax;">' + item.content + '</p><p style="font-size: ' + (size * 0.8) + 'vmax;">' + item.source + '</p>';
+            var dads_container = document.getElementById('dads-container');
+            dads_container.innerHTML = out
+        });
+    });
+}
+dispense_jokes();
+</script>
+</body>
