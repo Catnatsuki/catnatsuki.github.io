@@ -1,0 +1,443 @@
+/* Main Tags */
+@font-face {
+    font-family: 'ubuntu';
+    src: url('font/Ubuntu-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ubuntu';
+    src: url('font/Ubuntu-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: ubuntu, sans-serif;
+    background: #fde3b3;
+    color: #606160;
+    padding: 10vw 5vw 1em 5vw;
+}
+
+p {
+    color: #834300;
+    font-size: 1.3vw;
+    line-height: 1.2em;
+    margin-bottom: 1vw;
+    font-weight: normal;
+}
+
+h1, h2 {
+    font-family: ubuntu, serif;
+    font-weight: bold;
+}
+
+h1 {
+    color: #F39519;
+    font-size: 3.0vw;
+    line-height: 2vw;
+    margin: 0.5vw 0 2vw 0;
+}
+
+h2 {
+    color: #f4a030;
+    font-size: 3.0vw;
+    line-height: 3vw;
+    margin-bottom: 3vw;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 2.0vw;
+}
+
+ul {
+    margin-bottom: 1vw;
+}
+
+li {
+    font-size: 1.3vw;
+    line-height: 1.4vw;
+    color: #444647;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: #725a42;
+    text-decoration: none;
+}
+
+.big-heading {
+    font-size: 4.0vw;
+    margin-top: 0.4em;
+    margin-bottom: 0.5em;
+    margin-left: 0.1em;
+}
+
+.big-subheading {
+    font-size: 3.0vw;
+    margin-top: 0.3em;
+    margin-bottom: 0.2em;
+    margin-left: 0.2em;
+    color: #98886b;
+}
+
+/* Clock Styling */
+.clock-container {
+    position: absolute;
+    font-size: 2.0vw;
+    top: 1vw;
+    right: 1vw;
+    display: flex;
+    align-items: center;
+}
+
+.clock {
+    padding: 0.5vw;
+    color: #F39519;
+    border-radius: 5px;
+    margin-right: 1vw;
+}
+
+.globe-icon {
+    width: 3vw;
+    height: 3vw;
+    opacity: 0.7;
+    background-size: cover;
+    filter: invert(66%) sepia(67%) saturate(2901%) hue-rotate(353deg) brightness(1.05) contrast(0.91);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+/* Fixed/Float Tags */
+#profilePage {
+    padding: 10vw 2vw 1em 15vw;
+    width: 50vw;
+}
+
+div#header,
+div#header2,
+div.fixedWrapper {
+    position: absolute;
+    left: 0;
+    overflow: auto;
+}
+
+div#header {
+    top: 0;
+    z-index: 30;
+    width: 100%;
+    height: 1vw;
+    background: #fde3b3;
+    opacity: 0.7;
+    overflow: hidden;
+}
+
+div#header2 {
+    top: 0;
+    z-index: 10;
+    width: 98%;
+    height: 20vw;
+    overflow: hidden;
+    opacity: 0.9;
+    background: #fde3b3;
+}
+
+div.fixedWrapper {
+    top: 20vw;
+    bottom: 0;
+    width: 10vw;
+    margin: 0 0 0 1vw;
+}
+
+#profilePage div.fixedWrapper {
+    top: 20vw;
+    bottom: 0;
+    width: 25vw;
+    margin: 0 0 0 1vw;
+}
+
+@media screen {
+    body > div#header,
+    body > div#header2,
+    body > div.fixedWrapper {
+        position: fixed;
+    }
+}
+
+#message {
+    padding: 2.5vw 0 0 0;
+    text-align: right;
+    font-size: 1.3vw;
+}
+
+/* Layout Tags */
+.mainNav {
+    margin-bottom: 3vw;
+}
+
+.mainNav li {
+    color: #606160;
+    font-family: ubuntu, sans-serif;
+    font-size: 3.0vw;
+    font-weight: bold;
+    margin: 1vw 0 2vw 0;
+}
+
+.mainNav a:link, .mainNav a:visited, .mainNav a:hover, .mainNav a:active {
+    color: #725a42;
+    text-decoration: none;
+}
+
+.mainNav li .selected:link, .mainNav li .selected:visited,
+.mainNav li .selected:hover, .mainNav li .selected:active {
+    color: #F39519;
+    text-decoration: none;
+}
+
+#content {
+    padding-bottom: 2.5vw;
+}
+
+.divide {
+    margin-top: 2.5vw;
+}
+
+.leftcol {
+    float: left;
+    width: 10vw;
+}
+
+.rightcol {
+    float: left;
+    width: 12vw;
+}
+
+.contact {
+    color: #747474;
+}
+
+.work {
+    overflow: hidden;
+    margin-bottom: 7.5vw;
+    width: 75vw;
+    padding: 1.5vw;
+    background: #ffefd2;
+    border-radius: 5vw;
+}
+
+.work h1 {
+    font-size: 3.0vw;
+    line-height: 3vw;
+    margin-bottom: 0.3vw;
+}
+
+.work h2 {
+    font-size: 3.0vw;
+    line-height: 3vw;
+    margin-bottom: 1.5vw;
+    font-weight: normal;
+}
+
+.work .secondary {
+    color: #747474;
+}
+
+.work .workContainer {
+    width: 55vw;
+    float: left;
+    margin-right: 2vw;
+    overflow: hidden;
+    border-radius: 5vw;
+}
+
+.work .workContainer ul {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    list-style: none;
+    width: 9999px;
+}
+
+.work .workContainer ul li {
+    position: relative;
+    width: 55vw;
+    margin-right: 5vw;
+    float: left;
+    display: inline;
+}
+
+.work .workContainer ul li img {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.work .workText {
+    float: right;
+    width: 42vw;
+}
+
+.work .workText ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.work .workText ul li {
+    padding: 0;
+    margin: 0;
+    float: left;
+    text-align: center;
+    padding-bottom: 0.3vw;
+}
+
+.work .workText ul li a {
+    padding: 0.6vw 0;
+    text-decoration: none;
+    font-size: 1.3vw;
+    color: #909090;
+    padding-right: 1vw;
+}
+
+.work .workText ul li a:hover {
+    color: #181b21;
+}
+
+.work .workText .selected {
+    color: #000;
+}
+
+.clear {
+    height: 0;
+    width: 0;
+    line-height: 0;
+    clear: both;
+    font-size: 0;
+}
+
+/* Profile Page */
+#profilePage, #profilePage #header2 {
+    background: #191919;
+}
+
+#profilePage p, #profilePage h1, #profilePage li {
+    color: #fff;
+}
+
+#profileSlider {
+    width: 50vw;
+    overflow: hidden;
+}
+
+#profileList {
+    width: 300vw;
+    position: relative;
+}
+
+#profileList .profileBlock {
+    position: relative;
+    margin: 0 10vw 3vw 0;
+    float: left;
+    width: 50vw;
+}
+
+#profileList li {
+    color: #AAB3B2;
+}
+
+#profileList p {
+    font-size: 2.8vw;
+}
+
+/* Text Page */
+#text, #text #header2 {
+    background: #191919;
+}
+
+#text #header2 {
+    opacity: 0.87;
+}
+
+#text p, #text h1, #text li {
+    color: #fff;
+}
+
+#text p {
+    font-size: 3.0vw;
+}
+
+#text #content a {
+    font-family: Helvetica, Arial, Verdana, "Lucida Grande", sans-serif;
+    font-size: 3.3vw;
+    font-weight: bold;
+}
+
+#text #content a:link, #text #content a:visited,
+#text #content a:hover, #text #content a:active {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Subscribe Form */
+#subscribe-form {
+    margin-top: 2.5vw;
+    padding-top: 1.5vw;
+    border-top: 0.1vw solid #7C8A89;
+    border-bottom: 0.1vw solid #7C8A89;
+    padding-bottom: 2vw;
+}
+
+#subscribe-form p {
+    margin: 0.3em 0;
+    font-size: 1.3vw;
+}
+
+#subscribe-form label, .signintro {
+    font-size: 1.3vw;
+    color: #747474 !important;
+    font-family: Georgia, Arial, Verdana, "Lucida Grande", sans-serif !important;
+}
+
+#subscribe-form label {
+    display: block;
+}
+
+#subscribe-form .subscribe-field {
+    font-size: 1.3vw;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+    width: 23vw;
+    background-color: #1d1e1e;
+    border: 0;
+    padding: 0.3vw;
+    color: #838d8f !important;
+    border: 0.1vw solid #7C8A89;
+}
+
+#subscribe-form #subscribe-button {
+    margin-top: 2vw;
+    background: url('/web/20110129175308im_/http://www.de-facto.com/images/signup-submit.gif') 0 0 no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    width: 12vw;
+    height: 3.1vw;
+}
+
+#subscribe-form #subscribe-button:hover {
+    margin-top: 2vw;
+    background: url('/web/20110129175308im_/http://www.de-facto.com/images/signup-submit.gif') 0 -2.5vw no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    width: 12vw;
+    height: 3.1vw;
+}
+
+#subscribe-form #subscribe-button span {
+    display: none;
+}

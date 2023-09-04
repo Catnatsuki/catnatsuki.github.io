@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- quirks mode -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB">
+<head>
+	<meta charset="utf-8">
+	<title>Catnatsuki's corner of the web</title>
+  <meta property="og:description" content="The somewhat ✨ Pretty ✨ homepage to my cosy lil corner.">
+  <meta property="og:title" content="Catnatsuki's Corner of the web.">
+  <meta property="og:type" content="website">
+	<link href="../styles/base.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body id="portfolio">
+  <div id="header">
+    <h1 class="big-heading">Catnatsuki</h1>
+    <h1 id="mainheading" class="big-subheading" data-typing-delay="40">Would love to hear from you!</h1>
+    <div class="clock-container">
+      <div class="globe-icon">
+      	<img src="../styles/globe.svg">
+      </div>
+      <div class="clock">
+        <span id="current-time"></span>
+      </div>
+    </div>
+  </div>
+	<div id="header2"><div id="alert"></div></div>
+    
+	<div class="fixedWrapper">
+		<div id="fixed">
+      <ul class="mainNav">
+				<li><a href="../index.htm">About</a></li>
+				<li><a href="../project/project.htm">Projects</a></li>
+				<li><a href="../gallery/gallery.htm">Gallery</a></li>
+				<li><a href="../socials/socials.htm">Socials</a></li>
+				<li><a href="#" class="selected">Contact &mdash;</a></li>
+			</ul>
+        </div>
+    </div>    
+    
+    <div id="content">
+		
+		<div class="work">
+		<div class="new-button"></div>
+		<form action="https://formspree.io/f/xeqbgvbr"method="POST" class="contact-form" target="_blank" rel="noopener noreferrer">
+			<label font-size=30px>
+				Fill in your details below.
+			</label>
+			<br>
+			<label>
+				Name:
+				<br>
+				<input type="name" name="name">
+			</label>
+			<label>
+				Email: <br>
+				<input type="email" name="email">
+			</label>
+			<label>
+			  Message: <br>
+			  <textarea name="message"></textarea>
+			</label>
+			<button type="submit" id="sendbutt">Submit</button>
+			<input type="hidden" name="_next" value="contact.htm"/>
+		</form>	
+			<div class="clear"></div>
+		</div>
+		<!-- <hr> -->
+
+    </div>
+    <div class="clear"></div>
+    <script type="text/javascript" src="../scripts/typo.js"></script>
+</body>
+</html>
