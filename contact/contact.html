@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#fde3b3">
+	<title>Contact · Catnatsuki's corner of the web</title>
+	<meta name="description" content="Would love to hear from you! Send me an email.">
+	<meta property="og:title" content="Catnatsuki's Corner of the web.">
+	<meta property="og:description" content="Would love to hear from you! Send me an email.">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://catnatsuki.omg.lol/styles/gallery/capture%20yourself.jpg">
+	<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🍊%3C/text%3E%3C/svg%3E">
+	<link rel="preload" href="../styles/font/Ubuntu-Bold.ttf" as="font" type="font/ttf" crossorigin>
+	<link rel="stylesheet" href="../styles/base.css">
+	<link rel="stylesheet" href="../styles/colors.css">
+	<script src="../scripts/theme.js"></script>
+</head>
+
+<body>
+	<a class="skip-link" href="#content">Skip to content</a>
+	<div class="page">
+		<header class="site-header">
+			<p class="big-heading"><a href="../index.html"><span class="cat-trigger">Cat</span>natsuki</a></p>
+			<h1 id="mainheading" class="big-subheading" data-typing-delay="40">Would love to hear from you!</h1>
+			<div class="header-tools">
+				<div class="clock-container" title="Local time">
+					<span class="globe-icon" aria-hidden="true"></span>
+					<span id="current-time"></span>
+				</div>
+			</div>
+		</header>
+
+		<nav class="site-nav" id="site-nav" aria-label="Main">
+			<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list" aria-label="Open menu">
+				<span class="nav-toggle-bars" aria-hidden="true"></span>
+			</button>
+			<ul class="nav-list" id="nav-list">
+				<li><a href="../index.html">About</a></li>
+				<li><a href="../project/project.html">Projects</a></li>
+				<li><a href="../gallery/gallery.html">Gallery</a></li>
+				<li><a href="../socials/socials.html">Socials</a></li>
+				<li><a href="contact.html" aria-current="page">Contact</a></li>
+			</ul>
+		</nav>
+
+		<main id="content">
+			<section class="work">
+				<!-- Without JavaScript this still works: the browser opens a mailto: link with the subject and message filled in -->
+				<form id="contact-form" class="contact-form" action="mailto:catnatsuki@omg.lol" method="get" data-address="catnatsuki@omg.lol">
+					<h2 class="form-title">Say hello!</h2>
+					<label>
+						Name
+						<input type="text" name="name" autocomplete="name" placeholder="Your name">
+					</label>
+					<label>
+						Subject
+						<input type="text" name="subject" placeholder="Hello from your website :D">
+					</label>
+					<label>
+						Message
+						<textarea name="body" required placeholder="What's on your mind?"></textarea>
+					</label>
+					<button type="submit" class="btn">Open in my email app</button>
+					<p class="form-status" id="form-status" role="status"></p>
+				</form>
+
+				<div class="work-text contact-side">
+					<h2 class="card-title">Send me a message!</h2>
+					<p>Hitting the button opens a ready-to-send message in your own email app, so you can send it from your own address.</p>
+					<p>Prefer to write it yourself? Email me at <a class="email-address" href="mailto:catnatsuki@omg.lol">catnatsuki@omg.lol</a>.</p>
+					<div class="btn-row">
+						<button type="button" class="btn btn-secondary" id="copy-email">Copy email address</button>
+					</div>
+					<p>I'm a bit shy, but if you want to talk about movies, anime, books or anything else on this website that caught your eye feel free to drop a message.😊</p>
+				</div>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<p>You'll hear back from me soon. :D</p>
+		</footer>
+	</div>
+
+	<script src="../scripts/typo.js"></script>
+	<script src="../scripts/nav.js"></script>
+	<script src="../scripts/cat.js"></script>
+	<script src="../scripts/contact.js"></script>
+</body>
+</html>

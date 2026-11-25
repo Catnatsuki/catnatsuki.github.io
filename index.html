@@ -1,125 +1,146 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Catnatsuki's corner</title>
-    <meta property="og:description" content="A collection of all the things I've made. 🙃">
-    <meta property="og:title" content="Catnatsuki's Corner">
-    <meta property="og:type" content="website">
-    <!-- <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="styles/mvp.css">
-  </head>
-  <body>
-    <div class="imp">
-      <header>
-        <nav>
-          <ul>
-            <li><a href="#aboutme">About</a></li>
-            <li><a href="#contactme">Contact</a></li>
-            <li><a href="gallery/gallery.html">Gallery</a></li>
-          </ul>
-        </nav>
-        <h1 id='mainheading' data-typing-delay="80"> HELOHA! I'm Catnatsuki. 🙂</h1>
-        <p>This is my personal space :D</p>
-      </header>
-      <main>
-        <hr>
+<html lang="en-GB">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#fde3b3">
+	<title>About · Catnatsuki's corner of the web</title>
+	<meta name="description" content="The somewhat ✨ Pretty ✨ homepage to my cosy lil corner.">
+	<meta property="og:title" content="Catnatsuki's Corner of the web.">
+	<meta property="og:description" content="The somewhat ✨ Pretty ✨ homepage to my cosy lil corner.">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://catnatsuki.omg.lol/styles/gallery/capture%20yourself.jpg">
+	<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🍊%3C/text%3E%3C/svg%3E">
+	<link rel="preload" href="styles/font/Ubuntu-Bold.ttf" as="font" type="font/ttf" crossorigin>
+	<link rel="stylesheet" href="styles/base.css">
+	<link rel="stylesheet" href="styles/colors.css">
+	<script src="scripts/theme.js"></script>
+</head>
 
-        <header>
-          <a name="aboutme"></a>
-          <h2>About Me</h2>
-        </header>
+<body>
+	<a class="skip-link" href="#content">Skip to content</a>
+	<div class="page">
+		<header class="site-header">
+			<p class="big-heading"><a href="index.html"><span class="cat-trigger">Cat</span>natsuki</a></p>
+			<h1 id="mainheading" class="big-subheading" data-typing-delay="60">Heloha! Nice to see you.</h1>
+			<div class="header-tools">
+				<div class="clock-container" title="Local time">
+					<span class="globe-icon" aria-hidden="true"></span>
+					<span id="current-time"></span>
+				</div>
+			</div>
+		</header>
 
-        <article>
-          <h3><strong>Heya 👋🏽</strong></h3>
-          <p>I'm Catnatsuki, I somtimes also go by MrRobot, <br>I'm a student and a tech nerd, hoping to be a front end dev someday and an artist. <br> I do digital art (Pst. Scroll down to see some of my latest stuff), and am also learning front end web development.
-            <br><br> I'm a bit shy, but if you want to talk about anime, art, kpop or anything really feels free to get in touch.
-            <br>
-            😛 Even though I study at a university, most stuff I do is self learnt or taught by some nice people on the interweb.
-            <br>
-            I'm currently learning German, so if you speak German by any chance, hit me up. I'd love to talk to someone in German.
-            <br>
-            <br>
-            Anyways, I'm always interested in learning something new whether it be something related to web development or arts.
-            <br>
-            I used <a href="https://www.sublimetext.com/">Sublime text editor</a> to write this website, the styling was using <a href="https://andybrewer.github.io/mvp/">MVP.CSS</a>, the typing animation at start comes from <a href="https://neatnik.net/">Neatnik</a> and so does the <a href="https://omg.lol/">Omg.lol</a> domain.
-          </p>
-          <p>
-            <a href="redesign_wip/index.htm">Redesign</a>
-          </p>
-        </article>
+		<nav class="site-nav" id="site-nav" aria-label="Main">
+			<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list" aria-label="Open menu">
+				<span class="nav-toggle-bars" aria-hidden="true"></span>
+			</button>
+			<ul class="nav-list" id="nav-list">
+				<li><a href="index.html" aria-current="page">About</a></li>
+				<li><a href="project/project.html">Projects</a></li>
+				<li><a href="gallery/gallery.html">Gallery</a></li>
+				<li><a href="socials/socials.html">Socials</a></li>
+				<li><a href="contact/contact.html">Contact</a></li>
+			</ul>
+		</nav>
 
+		<main id="content">
+			<section class="work">
+				<div class="work-media">
+					<img src="styles/gallery/capture yourself.jpg" alt="Illustration of a person taking a selfie." width="2500" height="2500">
+				</div>
+				<div class="work-text">
+					<h2 class="card-title">I'm Catnatsuki....</h2>
+					<p class="card-subtitle">A nerd on the interweb.</p>
+					<p>A college student with a passion for programming and clean design. About to graduate with a bachelors and looking forward to joining a masters program in CS!</p>
+					<p>I love everything that is beautifully designed and constantly try to design the stuff I make in a way that is aesthetically pleasing. I also happen to love Orange, who could have guessed?</p>
+				</div>
+			</section>
 
-        <hr>
-        
-        <header>
-          <h2>Projects</h2>
-        </header>
-        <section>
-          <p>Some stuff I've made over the years, in case you want to have a look.</p>
-          <p> <strong>Morse Code: </strong>  <a href="morse/main.html">A webpage</a> which may help you learn basics of morse code.</p>
-          <p> <strong>Dad Jokes: </strong> <a href="Dadjokes/index.html">A webpage</a> which gives you a dad joke. </p>
-        </section>
+			<!--
+			Paste it over the <iframe> below. Delete the whole section to remove it.
+			(The playlist below is just a placeholder.)
+			-->
+			<section class="work">
+				<div class="work-text">
+					<h2 class="card-title">On repeat.</h2>
+					<p class="card-subtitle">What's in my ears lately.</p>
+					<p>A playlist I keep coming back to. Press play, and stay a while.</p>
+				</div>
+				<div class="work-embed">
+					<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Spotify playlist"></iframe>
+				</div>
+			</section>
 
-        <hr>
-        
-        <header>
-          <h2>My Best Drawings</h2>
-        </header>
-        <section class= 'artbox'>
-          <aside>
-            <h4>Firewatch Fan Art</h4>
-            <p><img src="gallery/images/gm1 firewatch.jpg" alt=""></p>
-          </aside>
+			<!--
+			To drop a whole column, delete its <div> (Movies or Books).
+			<li class="rec">
+				<span class="rec-title">Title</span>
+				<span class="rec-meta">Director or author &middot; Year</span>
+				<span class="rec-note">One line on why you like it.</span>
+			</li>
+			-->
+			<section class="work work-wide">
+				<div class="work-text">
+					<h2 class="card-title">Go watch &amp; read these.</h2>
+					<p class="card-subtitle">Some favourites.</p>
+					<div class="rec-columns">
+						<div>
+							<h3 class="rec-heading">🎬 Movies</h3>
+							<ul class="rec-list">
+								<li class="rec">
+									<span class="rec-title">The Holdovers</span>
+									<span class="rec-meta">Thomas McCarthy &middot; 2023</span>
+									<span class="rec-note">Best Christmas movie ever made!</span>
+								</li>
+								<li class="rec">
+									<span class="rec-title">Under the Silver Lake</span>
+									<span class="rec-meta">David Robert Mitchell &middot; 2018</span>
+									<span class="rec-note">Makes me question my everyday life 🙃</span>
+								</li>
+								<li class="rec">
+									<span class="rec-title">The Science of Sleep</span>
+									<span class="rec-meta">Michel Gondry &middot; 2006</span>
+									<span class="rec-note">Eternal Sunshine if it was dreamier and more surreal.</span>
+								</li>
+							</ul>
+						</div>
+						<div class="btn-row">
+							<a class="btn btn-secondary" href="https://letterboxd.com/catnatsuki/" target="_blank" rel="noopener noreferrer">See everything I've watched on Letterboxd</a>
+						</div>
+						<div>
+							<h3 class="rec-heading">📚 Books</h3>
+							<ul class="rec-list">
+								<li class="rec">
+									<span class="rec-title">The Reading List</span>
+									<span class="rec-meta">Sara Nisha Adams</span>
+									<span class="rec-note">Best cozy friendship story I've read in a while.</span>
+								</li>
+								<li class="rec">
+									<span class="rec-title">Emily Wilde Trilogy</span>
+									<span class="rec-meta">Heather Fawcett</span>
+									<span class="rec-note">A bit dark and grimmy but also cozy at the same time.</span>
+								</li>
+								<li class="rec">
+									<span class="rec-title">The Wedding People</span>
+									<span class="rec-meta">Alison Espach</span>
+									<span class="rec-note">Like an Airport novel, but not really.</span>
+								</li>
+							</ul>
+						</div>
+					</div>
 
-          <aside>
-            <h4>The Gardens Between fanart</h4>
-            <p><img src="gallery/images/gm2 gardensbetween.jpg" alt=""></p>
-          </aside>
+				</div>
+			</section>
+		</main>
 
-          <aside>
-            <h4>Pohang Lighthouse</h4>
-            <p><img src="gallery/images/Lighthouse-Hometown cha cha cha.jpg" alt=""></p>
-          </aside>
-        </section>
+		<footer class="site-footer">
+			<p>And that's a wrap. 😮‍💨</p>
+		</footer>
+	</div>
 
-        <hr>
-
-          <header>
-            <a name="contactme"></a>
-            <h2>Contact Me</h2>
-          </header>
-
-          <article>
-            <h3> <strong>Socials:</strong> </h3>
-            <ul>
-              <li>Email: <a href="mailto:catnatsuki@omg.lol?subject=:D contacting from your website">catnatsuki@omg.lol</a></li>
-              <li>Twitter: <a href="https://twitter.com/catnatsuki_">@Catnatsuki_</a></li>
-              <li>Instagram: <a href="https://www.instagram.com/catnatsuki_/">@Catnatsuki_</a></li>
-              <li>Telegram: <a href="https://t.me/RikiTeaki">@RikiTeaki</a></li>
-            </ul>
-
-            <h3> <strong>Other Profiles:</strong></h3>
-            <p>I've got an <a href="https://profile.omg.lol/catnatsuki">omg.lol</a> profile, feel free to have to look at it in case you wanna find my Kitsu or MyAnimeList.</p>
-
-            <h3><strong> Want to work with me?</strong></h3>
-            I accept art comissions for almost anything from drawing your fav anime character to emotes/sub badges etc.<br>For more information, get in touch with me using any of the above methods.
-
-            <h3><strong>Like what I do?</strong></h3>
-            <p> <a href="https://www.buymeacoffee.com/catnatsuki"><img src="bmc-button.svg" style="height: 3em !important; width: 10em !important; alt="by me a coffee logo""></img></a> </p>
-
-          </article>
-
-
-
-        <hr>
-      </main>
-
-    </div>
-
-    <script type="text/javascript" src="scripts/typo.js">
-
-    </script>
-
-  </body>
+	<script src="scripts/typo.js"></script>
+	<script src="scripts/nav.js"></script>
+	<script src="scripts/cat.js"></script>
+</body>
 </html>

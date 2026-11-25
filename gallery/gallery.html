@@ -1,196 +1,132 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <script src="https://kit.fontawesome.com/46c89c64df.js" crossorigin="anonymous"></script>
-    <meta charset="utf-8">
-    <title>Catnatsuki's art corner</title>
-    <meta property="og:description" content="A gallery of all the art I've made 😳😳">
-    <meta property="og:title" content="Catnatsuki's Art Corner">
-    <meta property="og:type" content="website">
-    <!-- <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="../styles/mvp.css">
-  </head>
-  <body>
-    <div class="imp">
-      <header>
-        <nav>
-          <ul class="horizontal">
-            <li>
-              <a href="../index.html">Catnatsuki</a>
-            </li>
-            <li>
-              <i class="fas fa-long-arrow-alt-right">
-              </i>
-            </li>
-            <li>
-                <a href="gallery.html"> Gallery</a>
-            </li>
+<html lang="en-GB">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#fde3b3">
+	<title>Gallery · Catnatsuki's corner of the web</title>
+	<meta name="description" content="~~Almost~~ Everything I've drawn. 🎨">
+	<meta property="og:title" content="Catnatsuki's Corner of the web.">
+	<meta property="og:description" content="~~Almost~~ Everything I've drawn. 🎨">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://catnatsuki.omg.lol/styles/gallery/capture%20yourself.jpg">
+	<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🍊%3C/text%3E%3C/svg%3E">
+	<link rel="preload" href="../styles/font/Ubuntu-Bold.ttf" as="font" type="font/ttf" crossorigin>
+	<link rel="stylesheet" href="../styles/base.css">
+	<link rel="stylesheet" href="../styles/flickity.css">
+	<link rel="stylesheet" href="../styles/colors.css">
+	<script src="../scripts/theme.js"></script>
+</head>
 
-          </ul>
-        </nav>
-        <article>
-          <h2>Stuff I've Drawn</h2>
-          <p>Here's <strike>almost</strike> everything I've drawn till date.</p>
-          <hr>
-        </article>
-      </header>
-      <main>
+<body>
+	<a class="skip-link" href="#content">Skip to content</a>
+	<div class="page">
+		<header class="site-header">
+			<p class="big-heading"><a href="../index.html"><span class="cat-trigger">Cat</span>natsuki</a></p>
+			<h1 id="mainheading" class="big-subheading" data-typing-delay="60">Stuff I've illustrated.</h1>
+			<div class="header-tools">
+				<div class="clock-container" title="Local time">
+					<span class="globe-icon" aria-hidden="true"></span>
+					<span id="current-time"></span>
+				</div>
+			</div>
+		</header>
 
+		<nav class="site-nav" id="site-nav" aria-label="Main">
+			<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list" aria-label="Open menu">
+				<span class="nav-toggle-bars" aria-hidden="true"></span>
+			</button>
+			<ul class="nav-list" id="nav-list">
+				<li><a href="../index.html">About</a></li>
+				<li><a href="../project/project.html">Projects</a></li>
+				<li><a href="gallery.html" aria-current="page">Gallery</a></li>
+				<li><a href="../socials/socials.html">Socials</a></li>
+				<li><a href="../contact/contact.html">Contact</a></li>
+			</ul>
+		</nav>
 
+		<main id="content">
+			<!--
+			Each collection is one <section class="work"> block, with a slideshow
+			(.carousel) of pictures. Reorder or remove by moving/deleting a block.
+			Slideshows start by themselves, no JavaScript changes needed.
+			Add loading="lazy" to every picture except the first on the page.
 
-          <h3>Hunter x Hunter Fanart:</h3>
-          <section class= 'artbox'>
-          <aside>
-            <h4>Killua</h4>
-            <p><img src="images/hxh1.jpg" alt=""></p>
-          </aside>
+			TEMPLATE:
+			<section class="work">
+				<div class="work-media">
+					<div class="carousel" aria-label="Short name of the collection">
+						<div class="carousel-cell"><img src="../styles/gallery/FILE.jpg" alt="What it shows" width="2000" height="2000" loading="lazy"></div>
+						<div class="carousel-cell"><img src="../styles/gallery/FILE2.jpg" alt="What it shows" width="2000" height="2000" loading="lazy"></div>
+					</div>
+				</div>
+				<div class="work-text">
+					<h2 class="card-title">Collection name</h2>
+					<p class="card-subtitle">Tagline.</p>
+					<p>A paragraph about it.</p>
+				</div>
+			</section>
+			-->
+			<section class="work">
+				<div class="work-media">
+					<div class="carousel" aria-label="Happy stuff illustrations">
+						<div class="carousel-cell"><img src="../styles/gallery/out in the fields.jpg" alt="Illustration: out in the fields" width="2000" height="2000"></div>
+						<div class="carousel-cell"><img src="../styles/gallery/poolday.jpg" alt="Illustration: pool day" width="2000" height="2000" loading="lazy"></div>
+						<div class="carousel-cell"><img src="../styles/gallery/swing.jpg" alt="Illustration: swing" width="2000" height="2000" loading="lazy"></div>
+						<div class="carousel-cell"><img src="../styles/gallery/capture yourself.jpg" alt="Illustration of a person taking a selfie" width="2500" height="2500" loading="lazy"></div>
+						<div class="carousel-cell"><img src="../styles/gallery/pointing.jpg" alt="Illustration: pointing" width="2000" height="2000" loading="lazy"></div>
+					</div>
+				</div>
+				<div class="work-text">
+					<h2 class="card-title">Happy Stuff</h2>
+					<p class="card-subtitle">Feel good and reminisce.</p>
+					<p>Stuff I like to draw when I'm happy. It makes me feel happy and sometimes Nostalgic.</p>
+					<p>Scroll through and see how you feel. 😄</p>
+				</div>
+			</section>
 
-          <aside>
-            <h4>Kurapika</h4>
-            <p><img src="images/hxh2.jpg" alt=""></p>
-          </aside>
+			<section class="work">
+				<div class="work-media">
+					<div class="carousel" aria-label="Sad stuff illustrations">
+						<div class="carousel-cell"><img src="../styles/gallery/waiting.jpg" alt="Illustration: waiting" width="2000" height="2000" loading="lazy"></div>
+						<div class="carousel-cell"><img src="../styles/gallery/severance.jpg" alt="Illustration: severance" width="2000" height="2000" loading="lazy"></div>
+						<div class="carousel-cell"><img src="../styles/gallery/skateboarding2.jpg" alt="Illustration: skateboarding" width="2000" height="2000" loading="lazy"></div>
+					</div>
+				</div>
+				<div class="work-text">
+					<h2 class="card-title">Sad Stuff</h2>
+					<p class="card-subtitle">Moody and Melancholy 🙃</p>
+					<p>Sometimes life gets in the way, you have to live through the despair.</p>
+					<p>These are the drawings for my sad boi starter pack, seek solace in them if you can. 😖</p>
+				</div>
+			</section>
 
-          <aside>
-            <h4>Chrollo Lucilfer</h4>
-            <p><img src="images/hxh3.jpg" alt=""></p>
-          </aside>
+			<section class="work">
+				<div class="work-media">
+					<div class="carousel" aria-label="Cute and cosy illustrations">
+						<div class="carousel-cell"><img src="../styles/gallery/rice_bug_packing.jpg" alt="Illustration: rice bug packing" width="2000" height="2000" loading="lazy"></div>
+						<div class="carousel-cell"><img src="../styles/gallery/lightbug_camping.jpg" alt="Illustration: light bug camping" width="2000" height="2000" loading="lazy"></div>
+						<div class="carousel-cell"><img src="../styles/gallery/rice_bug_stargazing.jpg" alt="Illustration: rice bug stargazing" width="2000" height="2000" loading="lazy"></div>
+					</div>
+				</div>
+				<div class="work-text">
+					<h2 class="card-title">Cute &amp; Cosy</h2>
+					<p class="card-subtitle">💜💜</p>
+					<p>Drawings that make my hopeless romantic heart skip a beat. 😌</p>
+					<p>Maybe they'll do the same to you. 🥺</p>
+				</div>
+			</section>
+		</main>
 
-          <aside>
-            <h4>Hisoka</h4>
-            <p><img src="images/hxh4.jpg" alt=""></p>
-          </aside>
+		<footer class="site-footer">
+			<p>Hope you liked what you saw. 😄</p>
+		</footer>
+	</div>
 
-          <aside>
-            <h4>Kite</h4>
-            <p><img src="images/hxh5.jpg" alt=""></p>
-          </aside>
-
-          <aside>
-            <h4>A DTIYS</h4>
-            <p><img src="images/hxh6.jpg" alt=""></p>
-          </aside>
-        </section>
-
-        <h3>Studio Ghibli Fanart:</h3>
-        <section class= 'artbox'>
-          <aside>
-            <h4>Howl</h4>
-            <p><img src="images/gb1.jpg" alt=""></p>
-          </aside>
-
-          <aside>
-            <h4>Totoro</h4>
-            <p><img src="images/gb2.jpg" alt=""></p>
-          </aside>
-
-          <aside>
-            <h4>TurnipHead</h4>
-            <p><img src="images/gb3.jpg" alt=""></p>
-          </aside>
-        </section>
-
-
-        <h3>Wallpapers:</h3>
-        <section class= 'artbox'>
-          <aside>
-            <h4>Redraw of a Pixel 6 wallpaper</h4>
-            <p><img src="images/wlp1.jpg" alt=""></p>
-          </aside>
-
-          <aside>
-            <h4>Inspired from Material You</h4>
-            <p><img src="images/wlp2.jpg" alt=""></p>
-          </aside>
-        </section>
-
-        <h3>Video Game Fanart:</h3>
-        <section class= 'artbox'>
-          <aside>
-            <h4>Firewatch</h4>
-            <p><img src="images/gm1 firewatch.jpg" alt=""></p>
-          </aside>
-
-          <aside>
-            <h4>The Gardens Between</h4>
-            <p><img src="images/gm2 gardensbetween.jpg" alt=""></p>
-          </aside>
-        </section>
-
-        <h3>Landscapes:</h3>
-        <section class= 'artbox'>
-          <aside>
-            <h4>Pohang Lighthouse</h4>
-            <p><img src="images/Lighthouse-Hometown cha cha cha.jpg" alt=""></p>
-          </aside>
-          
-          <aside>
-            <h4>Shrine from kimi no na wa</h4>
-            <p><img src="images/shrine_kimi_no_na_wa.jpg" alt=""></p>
-          </aside>
-        </section>
-
-        <h3>Others:</h3>
-        <section class= 'artbox'>
-            <aside>
-              <h4>Jack Skellington</h4>
-              <p><img src="images/jackskellington.jpg" alt=""></p>
-            </aside>
-
-            <aside>
-              <h4>Captain Haddock</h4>
-              <p><img src="images/haddock.jpg" alt=""></p>
-            </aside>
-
-            <aside>
-              <h4>Bill Cipher</h4>
-              <p><img src="images/bill cipher.jpg" alt=""></p>
-            </aside>
-
-            <aside>
-              <h4>Shambu</h4>
-              <p><img src="images/shambu.jpg" alt=""></p>
-            </aside>
-
-            <aside>
-              <h4>Marton from TechAltar as a funkopop</h4>
-              <p><img src="images/techaltar.jpg" alt=""></p>
-            </aside>
-
-            <aside>
-              <h4>Noe from Vanitas no carte</h4>
-              <p><img src="images/vanitasnoe.jpg" alt=""></p>
-            </aside>
-
-            <aside>
-              <h4>A DTIYS organized by <a href="https://www.instagram.com/raffael.art">Raffael Art</a></h4>
-              <p><img src="images/rafelladtiys.jpg" alt=""></p>
-            </aside>
-
-            <aside>
-              <h4>Tutorial By <a href="https://www.instagram.com/desaibhavya/">Desai Bhavya</a></h4>
-              <p><img src="images/TutorialTuesday3.jpg" alt=""></p>
-            </aside>
-
-            <aside>
-              <h4>Takumi from initial D</h4>
-              <p><img src="images/initiald.jpg" alt=""></p>
-            </aside>
-          
-            <aside>
-              <h4> <a href="https://www.instagram.com/alicetrati0n/">Alice. :p</a></h4>
-              <p><img src="images/Alicetrati0ns.jpg" alt=""></p>
-            </aside>
-          
-        </section>
-
-
-      </main>
-
-    </div>
-
-    <script type="text/javascript" src="typo.js">
-
-    </script>
-
-  </body>
+	<script src="../scripts/flickity.js"></script>
+	<script src="../scripts/typo.js"></script>
+	<script src="../scripts/nav.js"></script>
+	<script src="../scripts/cat.js"></script>
+	<script src="../scripts/carousel.js"></script>
+</body>
 </html>

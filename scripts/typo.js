@@ -1,4 +1,4 @@
-/*
+﻿/*
 Typo, a more natural web typing thing
 https://neatnik.net/typo
 https://github.com/neatnik/typo
@@ -63,50 +63,20 @@ var typos = {
 }
 
 async function typo(element, text) {
-	var buffer = '';
+	// Iterate by code point so emoji are never split in half
+	var letters = Array.from(text);
+	var buffer = [];
 	var typo_active = false;
-	var tag_active = false;
 	var typing_typos = (element.dataset.typoChance) ? element.dataset.typoChance : 10;
 	var typing_speed = (element.dataset.typingDelay) ? element.dataset.typingDelay : 50;
 	var typing_jitter = (element.dataset.typingJitter) ? element.dataset.typingJitter : 15;
+	var seed = 0;
+	var realization_delay_counter = 0;
 
-	for (var i = 0; i < text.length; i++) {
+	for (var i = 0; i < letters.length; i++) {
 
 		// Get the letter that we’re supposed to type
-		letter = text.charAt(i);
-
-		// TODO: actual support for html or markup or whatever
-
-		/*
-		// Handle elements/markup
-		if(letter == '<' && (
-			text.charAt(i+1) == 's' ||
-			text.charAt(i+1) == 'p' ||
-			text.charAt(i+1) == 'a' ||
-			text.charAt(i+1) == '/' ||
-			text.charAt(i+1) == 'i')
-		) {
-			tag_active = true;
-		}
-
-		if(tag_active) {
-
-			buffer = buffer + letter;
-			element.innerHTML = buffer;
-
-			if(letter == '>' && (
-				text.charAt(i-1) == 'n' ||
-				text.charAt(i-1) == 'a' ||
-				text.charAt(i-1) == 'p' ||
-				text.charAt(i+1) == '"' ||
-				text.charAt(i+1) == '/')
-			) {
-				tag_active = false;
-				await sleep(typing_speed);
-			}
-			continue;
-		}
-		*/
+		var letter = letters[i];
 
 		// Trigger a typo
 		if(chance(typing_typos) && typo_active === false && i > 1) {
@@ -114,32 +84,25 @@ async function typo(element, text) {
 			if(typeof typos[letter] !== 'undefined') {
 
 				// Swap the letter with a random typo
-				typo = typos[letter][Math.floor(Math.random() * typos[letter].length)];
+				var wrong = typos[letter][Math.floor(Math.random() * typos[letter].length)];
 
-				// Append the letter to the buffer
-				buffer = buffer + typo;
-
-				// Write the buffer
-				element.innerHTML = buffer;
+				buffer.push(wrong);
+				element.textContent = buffer.join('');
 
 				typo_active = true;
-				var seed = num_between(2,5);
-				realization_delay = seed;
+				seed = num_between(2,5);
 				realization_delay_counter = seed;
 			}
 		}
 
-		// Append the letter to the buffer
-		buffer = buffer + letter;
-
-		// Write the buffer
-		element.innerHTML = buffer;
+		buffer.push(letter);
+		element.textContent = buffer.join('');
 
 		// Typical typing speed
 		var speed_lower = parseFloat(typing_speed) - parseInt(typing_jitter);
 		var speed_upper = parseFloat(typing_speed) + parseInt(typing_jitter);
 
-		delay = num_between(speed_lower,speed_upper);
+		var delay = num_between(speed_lower,speed_upper);
 
 		// Chance of longer delay though
 		if(chance(5)) delay = num_between(100, 200);
@@ -157,10 +120,8 @@ async function typo(element, text) {
 					await sleep(typing_jitter);
 
 					// Rewind the buffer!
-					buffer = buffer.substring(0, buffer.length - 1);
-
-					// Write rewound buffer
-					element.innerHTML = buffer;
+					buffer.pop();
+					element.textContent = buffer.join('');
 
 					// Brief pause before continuing
 					await sleep(30);
@@ -174,15 +135,48 @@ async function typo(element, text) {
 			}
 		}
 	}
+}
 
-	// Whatever you do here will happen when the typing is finished
-	//do_something();
+function startTyping() {
+	var element = document.getElementById('mainheading');
+	if (!element) return;
 
-	return new Promise(resolve => setTimeout(resolve, 1));
+	var text = element.textContent.trim();
+	if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+	// Screen readers get the final text straight away; the animation is decoration
+	element.setAttribute('aria-label', text);
+
+	var ghost = document.createElement('span');
+	ghost.className = 'typing-ghost';
+	ghost.setAttribute('aria-hidden', 'true');
+	ghost.textContent = text;
+
+	var live = document.createElement('span');
+	live.className = 'typing-live';
+	live.setAttribute('aria-hidden', 'true');
+	live.dataset.typingDelay = element.dataset.typingDelay || '';
+	live.dataset.typoChance = element.dataset.typoChance || '';
+	live.dataset.typingJitter = element.dataset.typingJitter || '';
+
+	element.textContent = '';
+	element.append(ghost, live);
+	typo(live, text);
+}
+
+// Show the visitor's local time
+function updateClock() {
+	var clock = document.getElementById('current-time');
+	if (!clock) return;
+
+	var now = new Date();
+	var minutes = String(now.getMinutes()).padStart(2, '0');
+	clock.textContent = now.getHours() + ':' + minutes;
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-	var element = document.getElementById('mainheading');
-	var text = element.innerHTML;
-	typo(element, text);
+	startTyping();
+	updateClock();
+	setInterval(updateClock, 10000);
 });
+

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#fde3b3">
+	<title>Projects · Catnatsuki's corner of the web</title>
+	<meta name="description" content="A collection of the things I've built.">
+	<meta property="og:title" content="Catnatsuki's Corner of the web.">
+	<meta property="og:description" content="A collection of the things I've built.">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://catnatsuki.omg.lol/styles/gallery/capture%20yourself.jpg">
+	<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🍊%3C/text%3E%3C/svg%3E">
+	<link rel="preload" href="../styles/font/Ubuntu-Bold.ttf" as="font" type="font/ttf" crossorigin>
+	<link rel="stylesheet" href="../styles/base.css">
+	<link rel="stylesheet" href="../styles/colors.css">
+	<script src="../scripts/theme.js"></script>
+</head>
+
+<body>
+	<a class="skip-link" href="#content">Skip to content</a>
+	<div class="page">
+		<header class="site-header">
+			<p class="big-heading"><a href="../index.html"><span class="cat-trigger">Cat</span>natsuki</a></p>
+			<h1 id="mainheading" class="big-subheading" data-typing-delay="60">All my projects. 👨🏽‍💻</h1>
+			<div class="header-tools">
+				<div class="clock-container" title="Local time">
+					<span class="globe-icon" aria-hidden="true"></span>
+					<span id="current-time"></span>
+				</div>
+			</div>
+		</header>
+
+		<nav class="site-nav" id="site-nav" aria-label="Main">
+			<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list" aria-label="Open menu">
+				<span class="nav-toggle-bars" aria-hidden="true"></span>
+			</button>
+			<ul class="nav-list" id="nav-list">
+				<li><a href="../index.html">About</a></li>
+				<li><a href="project.html" aria-current="page">Projects</a></li>
+				<li><a href="../gallery/gallery.html">Gallery</a></li>
+				<li><a href="../socials/socials.html">Socials</a></li>
+				<li><a href="../contact/contact.html">Contact</a></li>
+			</ul>
+		</nav>
+
+		<main id="content">
+			<!--
+			Each project is one <section class="work"> block.
+			  - Reorder:  cut a whole block and paste it somewhere else.
+			  - Add:      copy the template below, paste it where you want it.
+			  - Remove:   delete the whole block.
+
+			Add loading="lazy" to every screenshot except the first one.
+			Button icons: icon-github or icon-globe. Drop the btn-row if there is no link.
+
+			TEMPLATE (copy from here ...)
+			<section class="work">
+				<div class="work-media">
+					<img src="screenshots/FILE.jpg" alt="" width="1200" height="800" loading="lazy">
+				</div>
+				<div class="work-text">
+					<h2 class="card-title">Project name</h2>
+					<p class="card-subtitle">One line summary.</p>
+					<ul class="feature-list">
+						<li>A point about it.</li>
+						<li>Another point.</li>
+					</ul>
+					<div class="btn-row">
+						<a class="btn" href="https://github.com/Catnatsuki/REPO" target="_blank" rel="noopener noreferrer"><span class="icon icon-github" aria-hidden="true"></span>View on GitHub</a>
+					</div>
+				</div>
+			</section>
+			-->
+			<section class="work">
+				<div class="work-media">
+					<img src="screenshots/noteit.png" alt="Screenshot of a note-taking app for Android." width="3300" height="2340">
+				</div>
+				<div class="work-text">
+					<h2 class="card-title">Note It.</h2>
+					<p class="card-subtitle">A note taking app for android.</p>
+					<ul class="feature-list">
+						<li>NoteIt is a simple note-taking app written in Kotlin using the MVVM architectural pattern, CRUD operations, and ROOM database.</li>
+						<li>Fully supports material you dynamic theming, markdown for various formatting options.</li>
+						<li>The app also includes nice animations.</li>
+					</ul>
+					<div class="btn-row">
+						<a class="btn" href="https://github.com/Catnatsuki/Note-It" target="_blank" rel="noopener noreferrer"><span class="icon icon-github" aria-hidden="true"></span>View on GitHub</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="work">
+				<div class="work-media">
+					<img src="screenshots/spoticord.png" alt="Preview card of the Spoticord GitHub repository." width="1200" height="600" loading="lazy">
+				</div>
+				<div class="work-text">
+					<h2 class="card-title">Spoticord</h2>
+					<p class="card-subtitle">Discord bot to manage spotify playlists.</p>
+					<ul class="feature-list">
+						<li>Spoticord is a discord bot which helps you manage shared playlists for your discord server!</li>
+						<li>Users can add songs to a shared playlist using slash commands.</li>
+						<li>Helps you limit the number of submissions per month with the help of a SQLite DB to track user submissions.</li>
+						<li>Default limit per month configured to 3.</li>
+					</ul>
+					<div class="btn-row">
+						<a class="btn" href="https://github.com/Catnatsuki/Spoticord" target="_blank" rel="noopener noreferrer"><span class="icon icon-github" aria-hidden="true"></span>View on GitHub</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="work">
+				<div class="work-media">
+					<img src="screenshots/morse3.jpg" alt="Screenshot of the Morse code learning website." width="1390" height="1008" loading="lazy">
+				</div>
+				<div class="work-text">
+					<h2 class="card-title">Morse</h2>
+					<p class="card-subtitle">A webpage to help you learn the morse code.</p>
+					<ul class="feature-list">
+						<li>Ever intrigued by morse code?</li>
+						<li>Morse is a simple website which will help you learn it!</li>
+						<li>Built using pure HTML/CSS/JS making it very lightweight.</li>
+					</ul>
+					<div class="btn-row">
+						<a class="btn" href="morse/main.html"><span class="icon icon-globe" aria-hidden="true"></span>Open the website</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="work">
+				<div class="work-media">
+					<img src="screenshots/calorie.jpg" alt="Screenshot of the calorie predictor web app." width="2880" height="1622" loading="lazy">
+				</div>
+				<div class="work-text">
+					<h2 class="card-title">Calorie Predictor</h2>
+					<p class="card-subtitle">ML model to predict calorie consumption.</p>
+					<ul class="feature-list">
+						<li>Used the <a href="https://www.kaggle.com/datasets/fmendes/fmendesdat263xdemos" target="_blank" rel="noopener noreferrer">workout dataset from kaggle</a>.</li>
+						<li>Analyzed the data using seaborn.</li>
+						<li>Trained the model using Polynomial Linear Regression.</li>
+						<li>Built a web app for it using flask.</li>
+					</ul>
+					<div class="btn-row">
+						<a class="btn" href="https://github.com/Catnatsuki/CaloriePrediction" target="_blank" rel="noopener noreferrer"><span class="icon icon-github" aria-hidden="true"></span>View on GitHub</a>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<p>Made with 🧡 and far too much orange.</p>
+		</footer>
+	</div>
+
+	<script src="../scripts/typo.js"></script>
+	<script src="../scripts/nav.js"></script>
+	<script src="../scripts/cat.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+/* =====================================================================
+   COLOUR SCHEMES
+
+   Every colour on the site comes from the 7 tokens below, so a scheme is
+   just one light block + one dark block.
+
+   --bg           page background
+   --card         cards and panels sitting on the background
+   --accent       big headings, the active menu item, the clock
+   --accent-soft  card subtitles
+   --ink          menu links, buttons, form text
+   --text         body copy
+   --muted        sub-heading under the logo, form labels, footer
+
+   SWITCH THE SCHEME:  change COLOR_SCHEME at the top of scripts/theme.js
+   ===================================================================== */
+
+
+/* ---------- orange ---------- */
+
+/* Also the fallback when JavaScript is off */
+:root:not([data-scheme]),
+[data-scheme="orange"] {
+	color-scheme: light;
+	--bg: #fde3b3;
+	--card: #ffefd2;
+	--accent: #F39519;
+	--accent-soft: #f4a030;
+	--ink: #725a42;
+	--text: #834300;
+	--muted: #86775b;
+}
+
+[data-scheme="orange"][data-theme="dark"] {
+	color-scheme: dark;
+	--bg: #231A11;
+	--card: #362718;
+	--accent: #FFB86E;
+	--accent-soft: #EA993D;
+	--ink: #E7BF9A;
+	--text: #FBDDC3;
+	--muted: #C4AC98;
+}
+
+
+/* ---------- purple ---------- */
+
+[data-scheme="purple"] {
+	color-scheme: light;
+	--bg: #ECE0FF;
+	--card: #F6EDFF;
+	--accent: #8968D8;
+	--accent-soft: #977CD9;
+	--ink: #625B70;
+	--text: #4E3B7C;
+	--muted: #6E687A;
+}
+
+[data-scheme="purple"][data-theme="dark"] {
+	color-scheme: dark;
+	--bg: #1D1A22;
+	--card: #2C2835;
+	--accent: #D0BCFF;
+	--accent-soft: #B79DF7;
+	--ink: #CDC1E2;
+	--text: #E8DFF5;
+	--muted: #B5AEBF;
+}
