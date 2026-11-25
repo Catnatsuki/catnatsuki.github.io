@@ -5,7 +5,7 @@
    The available schemes live in styles/colors.css ("orange", "purple", ...).
    Visitors can't change this, they only choose light / dark / follow-device.
    ===================================================================== */
-var COLOR_SCHEME = 'orange';
+var COLOR_SCHEME = 'purple';
 
 
 (function () {
